@@ -20,29 +20,9 @@
     "paths": {
       "@app/common": [
         "libs/common/src",
-        "libs/common/src"
       ],
       "@app/common/*": [
         "libs/common/src/*",
-        "libs/common/src/*"
-      ],
-      "@app/shared-services": [
-        "libs/shared-services/src"
-      ],
-      "@app/shared-services/*": [
-        "libs/shared-services/src/*"
-      ],
-      "@app/tt.core.sql": [
-        "libs/tt.core.sql/src"
-      ],
-      "@app/tt.core.sql/*": [
-        "libs/tt.core.sql/src/*"
-      ],
-      "@app/tt.telemetry.sql": [
-        "libs/tt.telemetry.sql/src"
-      ],
-      "@app/tt.telemetry.sql/*": [
-        "libs/tt.telemetry.sql/src/*"
       ],
       "@app/tt.analytics.mongo": [
         "libs/tt.analytics.mongo/src"
@@ -61,6 +41,36 @@
       ],
       "@app/logger/*": [
         "libs/logger/src/*"
+      ],
+      "@app/core": [
+        "libs/core/src",
+      ],
+      "@app/core/*": [
+        "libs/core/src/*",
+      ],
+      "@app/users": [
+        "libs/users/src"
+      ],
+      "@app/users/*": [
+        "libs/users/src/*"
+      ],
+      "@app/features": [
+        "libs/features/src"
+      ],
+      "@app/features/*": [
+        "libs/features/src/*"
+      ],
+      "@app/signals.sql": [
+        "libs/signals.sql/src"
+      ],
+      "@app/signals.sql/*": [
+        "libs/signals.sql/src/*"
+      ],
+      "@app/trackings.sql": [
+        "libs/trackings.sql/src"
+      ],
+      "@app/trackings.sql/*": [
+        "libs/trackings.sql/src/*"
       ]
     }
   }

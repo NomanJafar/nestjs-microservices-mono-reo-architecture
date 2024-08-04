@@ -6,6 +6,7 @@ import { ConfigurationService } from './configuration.service';
 @Module({})
 export class ConfigurationModule {
   static forRoot(options: { envFilePath: string, isGlobal: boolean }): DynamicModule {
+    console.log(`Loading environment variables from: ${options.envFilePath}`);
     return {
       module: ConfigurationModule,
       imports: [

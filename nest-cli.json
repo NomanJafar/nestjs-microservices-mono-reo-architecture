@@ -2,60 +2,6 @@
   "monorepo": true,
   "root": "apps",
   "projects": {
-    "tt.api": {
-      "type": "application",
-      "root": "apps/tt.api",
-      "entryFile": "main",
-      "sourceRoot": "apps/tt.api/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/tt.api/tsconfig.app.json"
-      }
-    },
-    "tt.telemetry": {
-      "type": "application",
-      "root": "apps/tt.telemetry",
-      "entryFile": "main",
-      "sourceRoot": "apps/tt.telemetry/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/tt.telemetry/tsconfig.app.json"
-      }
-    },
-    "tt.telemetry.processing": {
-      "type": "application",
-      "root": "apps/tt.telemetry.processing",
-      "entryFile": "main",
-      "sourceRoot": "apps/tt.telemetry.processing/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/tt.telemetry.processing/tsconfig.app.json"
-      }
-    },
-    "tt.oee": {
-      "type": "application",
-      "root": "apps/tt.oee",
-      "entryFile": "main",
-      "sourceRoot": "apps/tt.oee/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/tt.oee/tsconfig.app.json"
-      }
-    },
-    "tt.downtime": {
-      "type": "application",
-      "root": "apps/tt.downtime",
-      "entryFile": "main",
-      "sourceRoot": "apps/tt.downtime/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/tt.downtime/tsconfig.app.json"
-      }
-    },
-    "tt.job_estimation": {
-      "type": "application",
-      "root": "apps/tt.job_estimation",
-      "entryFile": "main",
-      "sourceRoot": "apps/tt.job_estimation/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/tt.job_estimation/tsconfig.app.json"
-      }
-    },
     "common": {
       "type": "library",
       "root": "libs/common",
@@ -63,24 +9,6 @@
       "sourceRoot": "libs/common/src",
       "compilerOptions": {
         "tsConfigPath": "libs/common/tsconfig.lib.json"
-      }
-    },
-    "tt.core.sql": {
-      "type": "library",
-      "root": "libs/tt.core.sql",
-      "entryFile": "index",
-      "sourceRoot": "libs/tt.core.sql/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/tt.core.sql/tsconfig.lib.json"
-      }
-    },
-    "tt.telemetry.sql": {
-      "type": "library",
-      "root": "libs/tt.telemetry.sql",
-      "entryFile": "index",
-      "sourceRoot": "libs/tt.telemetry.sql/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/tt.telemetry.sql/tsconfig.lib.json"
       }
     },
     "tt.analytics.mongo": {
@@ -94,11 +22,11 @@
     },
     "configuration": {
       "type": "library",
-      "root": "libs/configuration",
+      "root": "libs/core/configuration",
       "entryFile": "index",
-      "sourceRoot": "libs/configuration/src",
+      "sourceRoot": "libs/core/configuration/src",
       "compilerOptions": {
-        "tsConfigPath": "libs/configuration/tsconfig.lib.json"
+        "tsConfigPath": "libs/core/configuration/tsconfig.lib.json"
       }
     },
     "logger": {
@@ -108,6 +36,87 @@
       "sourceRoot": "libs/logger/src",
       "compilerOptions": {
         "tsConfigPath": "libs/logger/tsconfig.lib.json"
+      }
+    },
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    },
+    "features": {
+      "type": "library",
+      "root": "libs/features",
+      "entryFile": "index",
+      "sourceRoot": "libs/features/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/features/tsconfig.lib.json"
+      }
+    },
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    },
+    "signals": {
+      "type": "application",
+      "root": "apps/signals",
+      "entryFile": "main",
+      "sourceRoot": "apps/signals/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/signals/tsconfig.app.json"
+      }
+    },
+    "signals_processing": {
+      "type": "application",
+      "root": "apps/signals_processing",
+      "entryFile": "main",
+      "sourceRoot": "apps/signals_processing/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/signals_processing/tsconfig.app.json"
+      }
+    },
+    "alerts": {
+      "type": "application",
+      "root": "apps/alerts",
+      "entryFile": "main",
+      "sourceRoot": "apps/alerts/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/alerts/tsconfig.app.json"
+      }
+    },
+    "maintenance": {
+      "type": "application",
+      "root": "apps/maintenance",
+      "entryFile": "main",
+      "sourceRoot": "apps/maintenance/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/maintenance/tsconfig.app.json"
+      }
+    },
+    "signals.sql": {
+      "type": "library",
+      "root": "libs/signals.sql",
+      "entryFile": "index",
+      "sourceRoot": "libs/signals.sql/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/signals.sql/tsconfig.lib.json"
+      }
+    },
+    "trackings.sql": {
+      "type": "library",
+      "root": "libs/trackings.sql",
+      "entryFile": "index",
+      "sourceRoot": "libs/trackings.sql/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/trackings.sql/tsconfig.lib.json"
       }
     }
   },

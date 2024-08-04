@@ -6,23 +6,28 @@ export class ConfigurationService {
     constructor(private configService: ConfigService) { }
 
     get databaseHost(): string {
-        return this.configService.get<string>('DB_HOST');
+        const value = this.configService.get<string>('CORE_DB_HOST');
+        return value;
     }
 
     get databasePort(): number {
-        return this.configService.get<number>('DB_PORT');
+        const value = this.configService.get<number>('CORE_DB_PORT');
+        return value;
     }
 
     get databaseUsername(): string {
-        return this.configService.get<string>('DB_USERNAME');
+        const value = this.configService.get<string>('CORE_DB_USERNAME');
+        return value;
     }
 
     get databasePassword(): string {
-        return this.configService.get<string>('DB_PASSWORD');
+        const value = this.configService.get<string>('CORE_DB_PASSWORD');
+        return value;
     }
 
     get databaseName(): string {
-        return this.configService.get<string>('DB_NAME');
+        const value = this.configService.get<string>('CORE_DB_NAME');
+        return value;
     }
 
     // Add other configuration getters as needed
